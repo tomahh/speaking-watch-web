@@ -26,8 +26,8 @@ function speaked_time(date) {
 	}
 	text += hoursText[(hours  + (minutes <= 30 ? 0 : 1)) % 12];
 	if (round_minutes(minutes) == 0)
-		 text += " OCLOCK";
-	console.log(text);
+		text += " OCLOCK";
+	return text;
 }
 
 function init() {
@@ -36,6 +36,6 @@ function init() {
 
 function update() {
 	console.log("update !");
-	speaked_time(new Date());
+	console.log(speaked_time(new Date()));
     window.setTimeout(update, 1000);
 }

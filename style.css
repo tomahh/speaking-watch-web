@@ -1,0 +1,17 @@
+body {
+	background-color: #222;
+}
+
+#watch {
+	color: #777;
+	background-color: #222;
+	text-align: center;
+	font-family: monospace;
+	font-size: 1.5em;
+	letter-spacing: 1em;
+}
+
+#watch .highlight {
+	color:#eee;
+	text-shadow:1px 1px 0px #000;
+}

@@ -1,5 +1,4 @@
 $(function() {
-	console.log("coucou je suis le script");
 	init();
 	update();
 });
@@ -35,7 +34,6 @@ function init() {
 }
 
 function update() {
-	console.log("update !");
 	console.log(speakedTime(new Date()));
     window.setTimeout(update, 1000);
 }

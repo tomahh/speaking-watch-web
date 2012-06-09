@@ -8,9 +8,7 @@ function speakedTime(date) {
 		var ret = ~~((minutes % 60) / 5);
 		if (minutes > 30)
 			ret = 12 - ret;
-		console.log(ret);
 		return ret;
-		//return ~~(minutes <= 30 ? : ((30 - (minutes % 30)) / 5) + 1);
 	}
 
 	var minutesText = ["", "FIVE", "TEN", "QUARTER", "TWENTY", "TWENTY FIVE", "HALF"];
@@ -37,7 +35,16 @@ function speakedTime(date) {
 	for (var i = minutes % 5; i > 0; i--) {
 		text += " . ";
 	};
-	console.log(text);
+	return text;
+}
+
+function text_seconds(date) {
+	var seconds = date.getSeconds();
+	var text = "";
+
+	for (; seconds > 0; seconds--) {
+		text += "-";
+	}
 	return text;
 }
 
@@ -46,10 +53,14 @@ function init() {
 }
 
 function update() {	
-	var node = "ITLISASTIME<br />ACQUARTERDC<br />TWENTYFIVEX<br />HALFBTENFTO<br />PASTERUNINE<br />ONESIXTHREE<br />FOURFIVETWO<br />EIGHTELEVEN<br />SEVENTWELVE<br />TENSEOCLOCK<br />.....";
+	var node = "ITLISASTIME<br />ACQUARTERDC<br />TWENTYFIVEX<br />HALFBTENFTO<br />PASTERUNINE<br />ONESIXTHREE<br />FOURFIVETWO<br />EIGHTELEVEN<br />SEVENTWELVE<br />TENSEOCLOCK<br />.....<br />";
+	var seconds = "-----------------------------------------------------------";
+	var date = new Date();
 
-	node = highlightNode(node, speakedTime(new Date()));
+	node = highlightNode(node, speakedTime(date));
+	seconds = highlightNode(seconds, text_seconds(date));
 	$("#watch").html(node);
+	$("#seconds").html(seconds);
     window.setTimeout(update, 500);
 };
 

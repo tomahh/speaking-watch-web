@@ -33,7 +33,26 @@ function init() {
 
 }
 
-function update() {
-	console.log(speakedTime(new Date()));
+function update() {	
+	var node = "ITLISASTIME<br />ACQUARTERDC<br />TWERTYFIVEX<br />HALFBTENFTO<br />PASTERUNINE<br />ONESIXTHREE<br />FOURFIVETWO<br />EIGHTELEVEN<br />SEVENTWELVE<br />TENSEOCLOCK<br />";
+
+	node = highlightNode(node, speakedTime(new Date()));
+	$("#watch").html(node);
     window.setTimeout(update, 1000);
-}
+};
+
+function highlightNode(node, text) {
+	
+	var splited = text.split(" ");
+	var tmp = "";
+	
+	for (var i = 0; i != splited.length; i++)
+	{
+		node = node.replace(splited[i], "<span class='highlight'>" + splited[i] + "</span>");
+		tmp += node.slice(0, node.indexOf(splited[i]) + splited[i].length + 7);
+		node = node.slice(node.indexOf(splited[i]) + splited[i].length + 7, -1);
+	}
+	console.log("tmp = " + tmp);
+	tmp += node.slice(0, -1);
+	return tmp;
+};

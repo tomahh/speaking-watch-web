@@ -34,7 +34,7 @@ function init() {
 }
 
 function update() {	
-	var node = "ITLISASTIME<br />ACQUARTERDC<br />TWERTYFIVEX<br />HALFBTENFTO<br />PASTERUNINE<br />ONESIXTHREE<br />FOURFIVETWO<br />EIGHTELEVEN<br />SEVENTWELVE<br />TENSEOCLOCK<br />";
+	var node = "ITLISASTIME<br />ACQUARTERDC<br />TWENTYFIVEX<br />HALFBTENFTO<br />PASTERUNINE<br />ONESIXTHREE<br />FOURFIVETWO<br />EIGHTELEVEN<br />SEVENTWELVE<br />TENSEOCLOCK<br />";
 
 	node = highlightNode(node, speakedTime(new Date()));
 	$("#watch").html(node);
@@ -50,9 +50,9 @@ function highlightNode(node, text) {
 	{
 		node = node.replace(splited[i], "<span class='highlight'>" + splited[i] + "</span>");
 		tmp += node.slice(0, node.indexOf(splited[i]) + splited[i].length + 7);
+		console.log("node = " + node);
 		node = node.slice(node.indexOf(splited[i]) + splited[i].length + 7, -1);
 	}
-	console.log("tmp = " + tmp);
 	tmp += node.slice(0, -1);
 	return tmp;
 };

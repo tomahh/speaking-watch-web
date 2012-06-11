@@ -1,3 +1,8 @@
+/* @font-face { */
+/*     font-family: futur-mono; */
+/*     src: url("FUTRFW.TTF"); */
+/* } */
+
 body {
 	background-color: #111;
 }
@@ -6,7 +11,7 @@ body {
 	color: #444;
 	background-color: #111;
 	text-align: center;
-	font-family: monospace;
+	font-family: futur-mono, monospace;
 	font-size: 1.5em;
 	letter-spacing: 1em;
 	line-height:1.5em;

@@ -53,7 +53,7 @@ function init() {
 }
 
 function update() {	
-	var node = "ITLISASTIME<br />ACQUARTERDC<br />TWENTYFIVEX<br />HALFBTENFTO<br />PASTERUNINE<br />ONESIXTHREE<br />FOURFIVETWO<br />EIGHTELEVEN<br />SEVENTWELVE<br />TENSEOCLOCK<br />....<br />";
+	var node = "ITLISASTIME<br />ACQUARTERDC<br />TWENTYFIVEX<br />HALFBTENFTO<br />PASTERUNINE<br />ONESIXTHREE<br />FOURFIVETWO<br />EIGHTELEVEN<br />SEVENTWELVE<br />TENSEOCLOCK<br /><span class=\"minutes\">....</span><br />";
 	var seconds = "-----------------------------------------------------------";
 	var date = new Date();
 

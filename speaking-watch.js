@@ -26,7 +26,7 @@ function speakedTime(date) {
 		else
 			text += " TO ";
 	}
-	text += hoursText[(hours  + (minutes <= 30 ? 0 : 1)) % 12];
+	text += hoursText[(hours  + (minutes < 35 ? 0 : 1)) % 12];
 	if (roundMinutes(minutes) == 0)
 		text += " OCLOCK ";
 	for (var i = minutes; i >= 0; i--) {

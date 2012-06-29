@@ -57,11 +57,12 @@ function update() {
 	var seconds = "-----------------------------------------------------------";
 	var date = new Date();
 
-	node = highlightNode(node, speakedTime(date));
-	seconds = highlightNode(seconds, text_seconds(date));
+	 node = highlightNode(node, speakedTime(date));
+	// seconds = highlightNode(seconds, text_seconds(date));
+	//node = changeLetterColor(node, speakedTime(date));
 	$("#watch").html(node);
 	$("#seconds").html(seconds);
-    window.setTimeout(update, 500);
+    window.setTimeout(update, 10000);
 };
 
 function highlightNode(node, text) {
@@ -78,3 +79,7 @@ function highlightNode(node, text) {
 	tmp += node.slice(0, -1);
 	return tmp;
 };
+
+function changeLetterColor(node, letters) {
+	
+}

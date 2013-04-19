@@ -37,7 +37,6 @@ function speakedTime(date) {
 }
 
 function highlightNode(node, text) {
-
     var splited = text.split(" ");
     var tmp = "";
 

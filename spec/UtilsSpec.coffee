@@ -7,4 +7,4 @@ describe "Highlight words", ->
       .toEqual('i<span class="highlight">am</span>a<span class="highlight">jedi</span>')
   it "do not highlight if words are in the wrong order", ->
     expect(highlightWords("iamajedi", "jedi am"))
-      .toEqual('iama<span class="highlight">jedi</span>')
+      .not.toEqual('i<span class="highlight">am</span>a<span class="highlight">jedi</span>')

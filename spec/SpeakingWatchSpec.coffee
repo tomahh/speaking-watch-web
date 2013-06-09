@@ -29,7 +29,7 @@ describe "Speaking Watch", ->
   describe "oclock method", ->
     it "returns 'OCLOCK' when in 00..04", ->
       expect(watch.oclock(new Date("January 1, 1970, 1:04"))).toEqual("OCLOCK")
-    it "returns null when not in 00..04", ->
+    it "returns an empty string when not in 00..04", ->
       expect(watch.oclock(new Date("January 1, 1970, 1:44"))).toBe("")
 
   describe "spoken method", ->

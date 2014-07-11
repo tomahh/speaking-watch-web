@@ -9,7 +9,8 @@
     "coffeelint": "~1.5.2",
     "karma": "~0.12.17",
     "karma-jasmine": "~0.1.5",
-    "karma-cli": "0.0.4"
+    "karma-cli": "0.0.4",
+    "karma-phantomjs-launcher": "~0.1.4"
   },
   "scripts": {
     "test": "cake spec"

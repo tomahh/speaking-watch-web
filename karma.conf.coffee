@@ -1,5 +1,5 @@
 # Karma configuration
-# Generated on Fri Jul 11 2014 23:20:22 GMT+0200 (CEST)
+# Generated on Sat Jul 12 2014 00:01:37 GMT+0200 (CEST)
 
 module.exports = (config) ->
   config.set
@@ -63,9 +63,9 @@ module.exports = (config) ->
 
     # start these browsers
     # available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Firefox', 'Opera', 'PhantomJS']
+    browsers: ['PhantomJS']
 
 
     # Continuous Integration mode
     # if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
+    singleRun: true

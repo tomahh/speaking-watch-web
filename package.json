@@ -14,7 +14,7 @@
     "karma-coffee-preprocessor": "~0.2.1"
   },
   "scripts": {
-    "test": "cake spec"
+    "test": "cake test"
   },
   "repository": {
     "type": "git",

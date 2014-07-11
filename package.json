@@ -5,9 +5,11 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "jasmine-node": "~1.14.3",
     "coffee-script": "~1.7.1",
-    "coffeelint": "~1.5.2"
+    "coffeelint": "~1.5.2",
+    "karma": "~0.12.17",
+    "karma-jasmine": "~0.1.5",
+    "karma-cli": "0.0.4"
   },
   "scripts": {
     "test": "cake spec"

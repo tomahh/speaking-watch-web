@@ -1,0 +1,24 @@
+{
+  "name": "speaking-watch",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine-node": "~1.14.3",
+    "coffee-script": "~1.7.1",
+    "coffeelint": "~1.5.2"
+  },
+  "scripts": {
+    "test": "cake spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomahh/speaking-watch.git"
+  },
+  "author": "Thomas Duplomb",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/tomahh/speaking-watch/issues"
+  }
+}

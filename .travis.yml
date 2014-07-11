@@ -1,2 +1,3 @@
-before-script:
-  cake build
+language: node_js
+node_js:
+    - "0.10"

@@ -1,5 +1,5 @@
 update = ->
-  string =  "ITLISASTIME<br />" +
+  content =  "ITLISASTIME<br />" +
     "ACQUARTERDC<br />" +
     "TWENTYFIVEX<br />" +
     "HALFBTENFTO<br />" +
@@ -10,8 +10,9 @@ update = ->
     "SEVENTWELVE<br />" +
     "TENSEOCLOCK<br />"
 
-  string = highlightWords(string, "IT IS #{new SpeakingWatch().spoken(new Date)}")
-  $("#watch").html(string)
+  time = "IT IS #{new SpeakingWatch().spoken(new Date)}"
+  content = highlightWords(content, time)
+  $("#watch").html(content)
   window.setTimeout(update, 10000)
 
 $(-> update())

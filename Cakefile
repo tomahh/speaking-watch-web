@@ -14,7 +14,7 @@ task 'spec', 'Run Jasmine spec', ->
     karma.stderr.pipe(process.stdout)
 
 task 'lint', 'Run coffeelint', ->
-    args = ['src/', 'spec/', '--reporter', 'csv']
+    args = ['src/', 'spec/']
     coffeelint = spawn './node_modules/.bin/coffeelint', args
     coffeelint.stdout.pipe(process.stdout)
     coffeelint.stderr.pipe(process.stdout)

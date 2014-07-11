@@ -27,7 +27,10 @@ window.SpeakingWatch = class SpeakingWatch
     if this.roundMinutes(date.getMinutes()) == 0 then "OCLOCK" else ""
 
   spoken: (date = new Date()) ->
-    ret_string = if not this.oclock(date) then "#{this.minutes(date)} #{this.dial_half(date)} " else ""
+    ret_string = if not this.oclock(date)
+      "#{this.minutes(date)} #{this.dial_half(date)} "
+    else
+      ""
     ret_string += "#{this.hour(date)}"
     ret_string += " #{this.oclock(date)}" if this.oclock(date)
     ret_string

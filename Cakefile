@@ -8,7 +8,7 @@ task 'build', 'Build project from src/*.coffee to public/javascripts/*.js and te
     coffee.stderr.pipe(process.stdout)
 
 task 'spec', 'Run Jasmine spec', ->
-    args = ['start', '--single-run', '--browsers', 'PhantomJS', '--', 'karma.conf.coffee']
+    args = ['start', '--log-level', 'warn', '--single-run', '--browsers', 'PhantomJS', '--', 'karma.conf.coffee']
     karma = spawn './node_modules/.bin/karma', args
     karma.stdout.pipe(process.stdout)
     karma.stderr.pipe(process.stdout)

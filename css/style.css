@@ -56,3 +56,17 @@ body {
     font-size: 2em;
     letter-spacing: 0.1em;
 }
+
+#osx {
+  color: #eee;
+  font-family: helvetica;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 50px;
+}
+
+#osx a {
+  color: #eee;
+  text-decoration: none;
+}
